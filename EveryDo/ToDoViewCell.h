@@ -1,5 +1,5 @@
 //
-//  DetailViewController.h
+//  ToDoViewCell.h
 //  EveryDo
 //
 //  Created by Stefan Verveniotis on 2016-11-15.
@@ -9,9 +9,9 @@
 #import <UIKit/UIKit.h>
 #import "ToDo.h"
 
-@interface DetailViewController : UIViewController
+@interface ToDoViewCell : UITableViewCell
 
-- (void)setDetails:(ToDo *)toDo;
+- (void) setDisplay:(ToDo*)todo;
 
 @end
 

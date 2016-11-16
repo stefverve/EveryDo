@@ -14,6 +14,9 @@
 		E2B973591DDB695600DA3E34 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2B973571DDB695600DA3E34 /* Main.storyboard */; };
 		E2B9735B1DDB695600DA3E34 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2B9735A1DDB695600DA3E34 /* Assets.xcassets */; };
 		E2B9735E1DDB695600DA3E34 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2B9735C1DDB695600DA3E34 /* LaunchScreen.storyboard */; };
+		E2B973671DDB6ABE00DA3E34 /* ToDo.m in Sources */ = {isa = PBXBuildFile; fileRef = E2B973661DDB6ABE00DA3E34 /* ToDo.m */; };
+		E2B9736A1DDB84B400DA3E34 /* ToDoViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E2B973691DDB84B400DA3E34 /* ToDoViewCell.m */; };
+		E2B9736D1DDBBD1900DA3E34 /* AddToDoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2B9736C1DDBBD1900DA3E34 /* AddToDoViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +32,12 @@
 		E2B9735A1DDB695600DA3E34 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E2B9735D1DDB695600DA3E34 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E2B9735F1DDB695600DA3E34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E2B973651DDB6ABE00DA3E34 /* ToDo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToDo.h; sourceTree = "<group>"; };
+		E2B973661DDB6ABE00DA3E34 /* ToDo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToDo.m; sourceTree = "<group>"; };
+		E2B973681DDB84B400DA3E34 /* ToDoViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToDoViewCell.h; sourceTree = "<group>"; };
+		E2B973691DDB84B400DA3E34 /* ToDoViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToDoViewCell.m; sourceTree = "<group>"; };
+		E2B9736B1DDBBD1900DA3E34 /* AddToDoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddToDoViewController.h; sourceTree = "<group>"; };
+		E2B9736C1DDBBD1900DA3E34 /* AddToDoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddToDoViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +76,12 @@
 				E2B973521DDB695600DA3E34 /* MasterViewController.m */,
 				E2B973541DDB695600DA3E34 /* DetailViewController.h */,
 				E2B973551DDB695600DA3E34 /* DetailViewController.m */,
+				E2B973681DDB84B400DA3E34 /* ToDoViewCell.h */,
+				E2B973691DDB84B400DA3E34 /* ToDoViewCell.m */,
+				E2B9736B1DDBBD1900DA3E34 /* AddToDoViewController.h */,
+				E2B9736C1DDBBD1900DA3E34 /* AddToDoViewController.m */,
+				E2B973651DDB6ABE00DA3E34 /* ToDo.h */,
+				E2B973661DDB6ABE00DA3E34 /* ToDo.m */,
 				E2B973571DDB695600DA3E34 /* Main.storyboard */,
 				E2B9735A1DDB695600DA3E34 /* Assets.xcassets */,
 				E2B9735C1DDB695600DA3E34 /* LaunchScreen.storyboard */,
@@ -115,6 +130,7 @@
 				TargetAttributes = {
 					E2B973471DDB695600DA3E34 = {
 						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = JNQLRNGEA7;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -155,6 +171,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2B9736A1DDB84B400DA3E34 /* ToDoViewCell.m in Sources */,
+				E2B973671DDB6ABE00DA3E34 /* ToDo.m in Sources */,
+				E2B9736D1DDBBD1900DA3E34 /* AddToDoViewController.m in Sources */,
 				E2B973501DDB695600DA3E34 /* AppDelegate.m in Sources */,
 				E2B973531DDB695600DA3E34 /* MasterViewController.m in Sources */,
 				E2B9734D1DDB695600DA3E34 /* main.m in Sources */,
@@ -276,10 +295,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = JNQLRNGEA7;
 				INFOPLIST_FILE = EveryDo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = LHL.EveryDo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -287,10 +308,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = JNQLRNGEA7;
 				INFOPLIST_FILE = EveryDo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = LHL.EveryDo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
